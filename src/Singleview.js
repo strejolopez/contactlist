@@ -21,8 +21,9 @@
     marginRight:300
   },
   profilepic:{
-  	width:200,
+  	borderRadius:100,
     marginTop:50,
+    width:200
   },
   row:{
   	borderBottom:'solid rgb(231,231,231)',
@@ -58,7 +59,7 @@
  			<div style={styles.body}>
  				<div style={styles.imageContainer}>
  					<p style={styles.backButton} onClick={this.handleBack}><Icon name="arrow-left" arrow-left size="2x"/></p>
- 					<img style={styles.profilepic} alt={randomUsers.name.first + randomUsers.name.last} src={this.state.randomUsers.picture.medium} />
+ 					<img style={styles.profilepic} alt={randomUsers.name.first + randomUsers.name.last} src={this.state.randomUsers.picture.large} />
  				</div>
  				<ul>
  					<li style={styles.row}><p style={styles.westside}><Icon name="user" user size="1x"/></p><p style={styles.height}>{randomUsers.name.first} {randomUsers.name.last}</p></li>
